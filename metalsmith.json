@@ -1,0 +1,25 @@
+{
+  "source": "src/pages",
+  "destination": "public",
+  "plugins": {
+    "metalsmith-data": {
+      "index": "src/data/index.json"
+    },
+    "metalsmith-discover-partials": {
+      "directory": "src/partials"
+    },
+    "metalsmith-layouts": {
+      "directory": "src/layouts"
+    },
+    "metalsmith-in-place": true,
+    "metalsmith-beautify": {
+      "indent_size": 2,
+      "preserve_newlines": false,
+      "css": false
+    },
+    "metalsmith-sitemap": {
+      "hostname": "http://www.joaohorta.com",
+      "omitIndex": true
+    }
+  }
+}

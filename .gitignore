@@ -1,0 +1,9 @@
+
+# Javascript dependencies
+/node_modules
+
+# Folder view configuration files
+.DS_Store
+
+# Generated public files
+public/*

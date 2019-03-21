@@ -1,0 +1,32 @@
+{
+  "name": "joaohorta",
+  "version": "1.0.0",
+  "description": "João Horta portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx metalsmith && npm run scss",
+    "scss": "node-sass src/styles -o public/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpamarohorta/joaohorta.com.git"
+  },
+  "author": "João Horta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpamarohorta/joaohorta.com/issues"
+  },
+  "homepage": "https://github.com/jpamarohorta/joaohorta.com#readme",
+  "dependencies": {
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-beautify": "^0.2.0",
+    "metalsmith-data": "^0.3.0",
+    "metalsmith-discover-partials": "^0.1.2",
+    "metalsmith-in-place": "^4.2.0",
+    "metalsmith-layouts": "^2.3.0",
+    "metalsmith-sitemap": "^1.2.2",
+    "node-sass": "^4.11.0"
+  }
+}
